@@ -1,0 +1,117 @@
+#head{
+    text-align: center;
+    margin: 20px;
+}
+#header{
+    display: flex;
+    background-color: white;;
+    color: black;
+    justify-content: space-around;
+}
+
+.search-btn{
+    background-color:rgb(196, 187, 187);
+    color: rgb(22, 21, 21);
+    border-radius: 4px;
+    margin: 10px;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    /* justify-content: space-around; */
+    padding: 10px;
+}
+.search-btn:hover{
+    transform: scale(1.04);
+        cursor: pointer;
+
+}
+   
+
+#footer{
+    text-align: center;
+    background-color: white;;
+    color: black;
+    margin-top: 700px;
+}
+.tag{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-around;
+    background-color: azure;
+    color: black;
+    margin: 20px;
+}
+.tag:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+    background-color: rgb(196, 187, 187);
+    color: black;
+    border-radius: 3px;
+  
+}
+/* Media queries for responsiveness */
+
+/* For screens up to 1200px */
+@media (max-width: 1200px) {
+    #header {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tag {
+        flex: 1 1 30%;
+        margin: 10px;
+    }
+    #footer {
+        margin-top: 500px;
+    }
+}
+
+/* For screens up to 900px */
+@media (max-width: 900px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tag {
+        flex: 1 1 100%;
+        margin: 5px;
+    }
+    #footer {
+        margin-top: 300px;
+    }
+}
+
+/* For screens up to 550px */
+@media (max-width: 550px) {
+    .search-btn {
+        width: 50%;
+        margin: 10px 0;
+    }
+    .tag {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+    #footer {
+        margin-top: 200px;
+    }
+}
+
+/* For screens up to 400px */
+@media (max-width: 400px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-btn {
+        width: 70%;
+        margin: 5px 0;
+    }
+    .tag {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+    #footer {
+        margin-top: 150px;
+    }
+}
